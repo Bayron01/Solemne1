@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document </title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <h1> Desea eliminar registro? {{entrenador.id}} </h1>
+        <button class="btn btn-danger" type="submit"> Si, eliminar</button>
+        <a class = "btn btn-default" href="{% url 'listar_entrenador' %}"> Cancelar</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Detallar </title>
+  </head>
+  <body>
+  	<div class="container">
+  		<h1>Detalle del Jugador</h1>
+    	<ul>
+        		<li><strong>Nombre</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{jugador.name}}</li>
+        		<li><strong>Apellido</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{jugador.nickname}}</li>
+        		<li><strong>Cumpleaños</strong>: &nbsp; &nbsp;   {{jugador.birthday}}</li>
+        		<li><strong>Edad</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{jugador.age}}</li>
+        		<li><strong>Email</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{jugador.email}}</li>
+        		<li><strong>Altura</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;{{jugador.height}}</li>
+        		<li><strong>Peso</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{jugador.weight}}</li>
+        		<li><strong>Foto</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{jugador.picture}}</li>
+        		<li><strong>Posicion</strong>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{jugador.position}}</li>
+        		<li>Equipo: ?</li>
+    	</ul>
+    </div>
+
+    <form class="form-inline my-2 my-lg-0">
+          
+            <td>
+                 <a href="{% url 'listar_jugador' %}" class="btn btn-outline-success my-2 my-sm-0" >Retroceder</a>
+                 
+            </td>
+         
+        </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<!--ul>
+                			<th scope="row">Nombre: &nbsp; &nbsp; &nbsp; {{jugador.name}}</th>
+                      <th scope="row">Apodo: &nbsp; &nbsp; &nbsp; {{jugador.nickname}}</th>
+                      <th scope="row">Cumpleaños: &nbsp; &nbsp; &nbsp; {{jugador.birthday}}</th>
+                      <th scope="row">Edad: &nbsp; &nbsp; &nbsp; {{jugador.age}}</th>
+                      <th scope="row">Email: &nbsp; &nbsp; &nbsp; {{jugador.email}}</th>
+                      <th scope="row">Altura: &nbsp; &nbsp; &nbsp; {{jugador.height}}</th>
+                      <th scope="row">Peso: &nbsp; &nbsp; &nbsp; {{jugador.weight}}</th>
+                      <th scope="row">Foto: &nbsp; &nbsp; &nbsp; {{jugador.picture}}</th>
+                      <th scope="row">Posicion: &nbsp; &nbsp; &nbsp; {{jugador.position}}</th>
+
+
+
+
+        					<li><strong>Nombre</strong>: {{jugador.name}}</li>
+        					<li><strong>Apodo</strong>: {{jugador.nickname}}</li>
+        					<li><strong>Cumpleaños</strong>: {{jugador.birthday}}</li>
+        					<li><strong>Edad</strong>: {{jugador.age}}</li>
+        					<li><strong>Email</strong>: {{jugador.email}}</li>
+        					<li><strong>Altura</strong>: {{jugador.height}}</li>
+        					<li><strong>Peso</strong>: {{jugador.weight}}</li>
+        					<li><strong>Foto</strong>: {{jugador.picture}}</li>
+        					<li><strong>Posicion</strong>: {{jugador.position}}</li>
+        					li>Equipo: ?</li>
+    					</ul-->
